@@ -1,0 +1,68 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	12114321472 [label="
+ (1, 35)" fillcolor=darkolivegreen1]
+	12114308592 [label=AddmmBackward0]
+	12114308160 -> 12114308592
+	12114321552 [label="decoder_layers.2.bias
+ (35)" fillcolor=lightblue]
+	12114321552 -> 12114308160
+	12114308160 [label=AccumulateGrad]
+	12114308400 -> 12114308592
+	12114308400 [label=ReluBackward0]
+	12114308448 -> 12114308400
+	12114308448 [label=AddmmBackward0]
+	12114308016 -> 12114308448
+	12089056928 [label="decoder_layers.0.bias
+ (17)" fillcolor=lightblue]
+	12089056928 -> 12114308016
+	12114308016 [label=AccumulateGrad]
+	12114308064 -> 12114308448
+	12114308064 [label=ReluBackward0]
+	12114307920 -> 12114308064
+	12114307920 [label=AddmmBackward0]
+	12114307632 -> 12114307920
+	4373693680 [label="encoder_layers.2.bias
+ (8)" fillcolor=lightblue]
+	4373693680 -> 12114307632
+	12114307632 [label=AccumulateGrad]
+	12114307680 -> 12114307920
+	12114307680 [label=ReluBackward0]
+	12114307488 -> 12114307680
+	12114307488 [label=AddmmBackward0]
+	12088854656 -> 12114307488
+	11169573120 [label="encoder_layers.0.bias
+ (17)" fillcolor=lightblue]
+	11169573120 -> 12088854656
+	12088854656 [label=AccumulateGrad]
+	12088855616 -> 12114307488
+	12088855616 [label=TBackward0]
+	12089816064 -> 12088855616
+	12088814464 [label="encoder_layers.0.weight
+ (17, 35)" fillcolor=lightblue]
+	12088814464 -> 12089816064
+	12089816064 [label=AccumulateGrad]
+	12114307728 -> 12114307920
+	12114307728 [label=TBackward0]
+	12114307392 -> 12114307728
+	4373693600 [label="encoder_layers.2.weight
+ (8, 17)" fillcolor=lightblue]
+	4373693600 -> 12114307392
+	12114307392 [label=AccumulateGrad]
+	12114308496 -> 12114308448
+	12114308496 [label=TBackward0]
+	12114307440 -> 12114308496
+	12089054048 [label="decoder_layers.0.weight
+ (17, 8)" fillcolor=lightblue]
+	12089054048 -> 12114307440
+	12114307440 [label=AccumulateGrad]
+	12114308208 -> 12114308592
+	12114308208 [label=TBackward0]
+	12114307584 -> 12114308208
+	12114322912 [label="decoder_layers.2.weight
+ (35, 17)" fillcolor=lightblue]
+	12114322912 -> 12114307584
+	12114307584 [label=AccumulateGrad]
+	12114308592 -> 12114321472
+}
