@@ -1,5 +1,5 @@
 # QSO_Selection
-Performing QSO selection via VAEs
+Performing QSO selection via AI
 
 ## Links
 
